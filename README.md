@@ -10,6 +10,19 @@ plain text logs per project.
 No agent rules, no system prompts, no per-project config.
 The hooks capture everything at the infrastructure level.
 
+## Preview
+
+**Dashboard** -- project cards with time estimates, activity
+heatmap, and recent prompts across all projects:
+
+![Dashboard overview](screenshots/log-viewer-overview.png)
+
+**Project detail** -- conversation-style display with user
+prompts, thinking duration, and markdown-rendered agent
+responses with smart truncation:
+
+![Project chat view](screenshots/log-viewer-project-chat-view.png)
+
 ## What You Get
 
 - Every user prompt (U), agent thinking block (T), and
