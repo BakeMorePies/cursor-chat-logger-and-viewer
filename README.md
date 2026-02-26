@@ -143,13 +143,29 @@ Example:
 
 ## Log Viewer
 
-Run the self-contained viewer from anywhere:
+### Option A: Laravel Herd (always-on local domain)
+
+If you use [Laravel Herd](https://herd.laravel.com), the
+viewer can run as a parked site with no manual server:
+
+```bash
+mkdir -p ~/Herd/log-viewer
+cp log-viewer.php ~/Herd/log-viewer/index.php
+```
+
+Visit **http://log-viewer.test** -- Herd handles the
+domain, SSL, and PHP automatically. No ports to remember,
+no process to start.
+
+### Option B: PHP built-in server
+
+Run from anywhere, no install required:
 
 ```bash
 php -S localhost:8899 log-viewer.php
 ```
 
-Features:
+### Features
 - Dashboard with project cards, activity heatmap, and
   recent prompts
 - Project detail with day-by-day breakdown and expandable
