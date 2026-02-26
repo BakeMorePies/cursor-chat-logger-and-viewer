@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "php ~/.cursor/hooks/audit.php"
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "php ~/.cursor/hooks/audit.php"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "php ~/.cursor/hooks/audit.php"
+      }
+    ]
+  }
+}
