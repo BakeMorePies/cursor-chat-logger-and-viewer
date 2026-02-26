@@ -1,5 +1,7 @@
 # Cursor Chat Logger and Viewer
 
+Cursor doesn't timestamp chat entries. This fixes that.
+
 Silently tracks all Cursor AI interactions across every
 project with timestamps, conversation IDs, user prompts,
 agent thinking, and agent responses. No database required --
@@ -36,6 +38,7 @@ responses with smart truncation:
 
 ## Requirements
 
+- macOS (uses `~/.cursor/` for hooks and log storage)
 - PHP in PATH (Laravel Herd, Homebrew, or any PHP install)
 - Cursor IDE 2.5+
 
